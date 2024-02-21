@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* Login */
+body {
+	background: url('../images/bgimg3.jpg') center center fixed;
+	background-size: cover;
+	opacity: 0.8;
+	font-family: sans-serif;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	/* Adjust the opacity as needed */
+	z-index: -1; /* Place the overlay behind the content */
+}
+
+h1 {
+	color: aliceblue;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.login-container {
+	margin-top: 100px;
+}
+
+.form-container {
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-row .form-group {
+	margin-bottom: 10px; /* Adjust the bottom margin as needed */
+}
+
+label {
+	color: aliceblue;
+}
+
+.btn-primary {
+	background-color: rgb(199, 14, 199); /* Set button color to purple */
+	border: none;
+	color: antiquewhite;
+	margin-bottom: 25px;
+	margin-top: 60px;
+}
+
+#togglePassword, #toggleConfirmPassword {
+	background-color: rgb(245, 232, 232);
+	/* Set eye symbol background color to black */
+}
+
+.old-user {
+	text-align: center;
+	color: aliceblue;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.old-user a {
+	color: aliceblue;
+}
+
+.old-user a :hover {
+	color: aqua;
+}
+
+/* Registration */
+.registration-container {
+	margin-top: 50px;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+/* Responsive */
+@media ( max-width : 768px) {
+	.form-group {
+		margin-bottom: 15px;
+	}
+}
+
+/*updateuser*/
+
+/* User Details */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	color: white;
+	/*	margin-left: auto; 
+    margin-right: auto; */
+}
+
+h1 {
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: center;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+}
+
+th {
+	background-color: purple;
+	color: white;
+}
+
+.actions {
+	display: table-cell;
+	justify-content: space-between;
+}
+
+.edit-icon {
+	color: blue; /* Change color for edit icon */
+	margin-right: 10px;
+}
+
+.delete-icon {
+	color: red; /* Change color for delete icon */
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+	th, td {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	th {
+		text-align: center;
+	}
+	.actions {
+		flex-direction: column;
+		align-items: center;
+	}
+	.edit-icon {
+		color: blue; /* Change color for edit icon */
+	}
+	.delete-icon {
+		color: red; /* Change color for delete icon */
+	}
+}
